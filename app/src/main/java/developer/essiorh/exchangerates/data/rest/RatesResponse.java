@@ -18,7 +18,7 @@ public class RatesResponse {
     @SerializedName(BASE)
     private String base;
     @SerializedName(RATES)
-    private RateRest rates;
+    private Map<String, float> rates;
 
     public String getDate() {
         return date;
@@ -36,11 +36,11 @@ public class RatesResponse {
         this.base = base;
     }
 
-    public RateRest getRates() {
+    public Map<String, float> getRates() {
         return rates;
     }
 
-    public void setRates(RateRest rates) {
+    public void setRates(Map<String, float> rates) {
         this.rates = rates;
     }
 }
