@@ -9,6 +9,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class RateRest {
 
+    //FIXME need to change this structure to a HashMap in the future
     @SerializedName(RestConst.ResponseFields.AUD)
     private float aud;
     @SerializedName(RestConst.ResponseFields.BGN)
