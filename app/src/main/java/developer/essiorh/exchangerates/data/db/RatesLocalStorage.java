@@ -20,7 +20,7 @@ public class RatesLocalStorage extends BaseLocalStorage implements IRatesLocalSt
                 realm1.delete(RatesRealm.class);
                 realm1.delete(Rate.class);
                 for (RatesRealm ratesRealm : ratesRealmList) {
-                    realm1.copyToRealm(ratesRealm.getRates());
+                    realm1.copyToRealm(ratesRealm.getRatesList());
                 }
                 realm1.copyToRealm(ratesRealmList);
             });

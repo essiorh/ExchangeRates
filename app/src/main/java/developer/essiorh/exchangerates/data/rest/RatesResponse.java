@@ -2,6 +2,8 @@ package developer.essiorh.exchangerates.data.rest;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.Map;
+
 import static developer.essiorh.exchangerates.data.rest.RestConst.ResponseFields.BASE;
 import static developer.essiorh.exchangerates.data.rest.RestConst.ResponseFields.DATE;
 import static developer.essiorh.exchangerates.data.rest.RestConst.ResponseFields.RATES;
@@ -18,7 +20,7 @@ public class RatesResponse {
     @SerializedName(BASE)
     private String base;
     @SerializedName(RATES)
-    private Map<String, float> rates;
+    private Map<String, Float> rates;
 
     public String getDate() {
         return date;
@@ -36,11 +38,11 @@ public class RatesResponse {
         this.base = base;
     }
 
-    public Map<String, float> getRates() {
+    public Map<String, Float> getRates() {
         return rates;
     }
 
-    public void setRates(Map<String, float> rates) {
+    public void setRates(Map<String, Float> rates) {
         this.rates = rates;
     }
 }

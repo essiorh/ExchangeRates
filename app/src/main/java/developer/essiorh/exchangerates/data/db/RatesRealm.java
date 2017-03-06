@@ -1,5 +1,6 @@
 package developer.essiorh.exchangerates.data.db;
 
+import io.realm.RealmList;
 import io.realm.RealmObject;
 
 /**
@@ -10,7 +11,7 @@ import io.realm.RealmObject;
 public class RatesRealm extends RealmObject {
     private String date;
     private String base;
-    private Rate rates;
+    private RealmList<Rate> ratesList;
 
     public String getDate() {
         return date;
@@ -28,11 +29,11 @@ public class RatesRealm extends RealmObject {
         this.base = base;
     }
 
-    public Rate getRates() {
-        return rates;
+    public RealmList<Rate> getRatesList() {
+        return ratesList;
     }
 
-    public void setRates(Rate rates) {
-        this.rates = rates;
+    public void setRatesList(RealmList<Rate> ratesList) {
+        this.ratesList = ratesList;
     }
 }

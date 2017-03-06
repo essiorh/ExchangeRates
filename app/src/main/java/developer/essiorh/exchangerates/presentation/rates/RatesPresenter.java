@@ -19,7 +19,7 @@ public class RatesPresenter extends BasePresenter<RatesView, RatesRouter>
 
     private final IRatesInteractor interactor;
 
-    // flag for
+    // flag for banning multiple requests
     private boolean isRequestActive;
 
     @Inject
@@ -68,5 +68,6 @@ public class RatesPresenter extends BasePresenter<RatesView, RatesRouter>
     @Override
     public void onStop() {
         interactor.unsubscribe();
+        isRequestActive = false;
     }
 }

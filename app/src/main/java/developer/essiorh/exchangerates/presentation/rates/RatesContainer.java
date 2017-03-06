@@ -1,5 +1,7 @@
 package developer.essiorh.exchangerates.presentation.rates;
 
+import java.util.List;
+
 /**
  * Created by eSSiorh
  * on 06/03/17
@@ -30,7 +32,7 @@ public class RatesContainer {
         return ratesPreview;
     }
 
-    public void setRatesPreview(String rates) {
-        this.ratesPreview = rates;
+    public void setRatesPreview(String ratesPreview) {
+        this.ratesPreview = ratesPreview;
     }
 }

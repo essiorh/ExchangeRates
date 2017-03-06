@@ -50,6 +50,8 @@ public class RatesFragment extends BaseFragment implements RatesView,
     public void onStop() {
         super.onStop();
         presenter.onStop();
+        dismissRefreshing();
+
     }
 
     @Override
